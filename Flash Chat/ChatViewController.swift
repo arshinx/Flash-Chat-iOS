@@ -28,7 +28,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       messageTextfield.delegate = self
       
       // Set the tapGesture
-
+      
       // Register MessageCell.xib file
       messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
 
@@ -75,23 +75,21 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
 
-   //TODO: Declare textFieldDidBeginEditing
+   // Begins Editing
+   func textFieldDidBeginEditing(_ textField: UITextField) {
+      
+      // move up message textfield
+      heightConstraint.constant = 308
+      view.layoutIfNeeded()
+   }
 
+   
 
-
-
-   //TODO: Declare textFieldDidEndEditing
-
-
-
+   
    ///////////////////////////////////////////
 
 
-   //MARK: - Send & Recieve from Firebase
-
-
-
-
+   // MARK: - Send & Recieve from Firebase
 
    @IBAction func sendPressed(_ sender: AnyObject) {
 
