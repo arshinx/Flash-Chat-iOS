@@ -52,6 +52,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
       cell.messageBody.text = messageArray[indexPath.row].messageBody
       cell.senderUsername.text = messageArray[indexPath.row].sender
+      cell.avatarImageView.image = UIImage(named: "egg")
       return cell
    }
 
