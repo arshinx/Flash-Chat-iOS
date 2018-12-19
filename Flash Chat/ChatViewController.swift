@@ -10,7 +10,7 @@ import Firebase
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
    // Instance variables
-   
+   var messageArray: [Message] = [Message]()
 
    // We've pre-linked the IBOutlets
    @IBOutlet var heightConstraint: NSLayoutConstraint!
