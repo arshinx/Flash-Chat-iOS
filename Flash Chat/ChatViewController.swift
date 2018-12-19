@@ -28,6 +28,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       messageTextfield.delegate = self
       
       // Set the tapGesture
+      let tapGesture = UITapGestureRecognizer(target: messageTableView, action: #selector(tableViewTapped))
+      messageTableView.addGestureRecognizer(tapGesture)
       
       // Register MessageCell.xib file
       messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
