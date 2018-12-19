@@ -21,16 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-2y-UOi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="e8P-2y-UOi">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Chat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3sL-p3-uqi">
+                                <rect key="frame" x="102.5" y="104" width="209.5" height="40"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="e8P-2y-UOi" secondAttribute="trailing" id="QlK-Wi-vgP"/>
+                            <constraint firstItem="3sL-p3-uqi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rr4-d4-2Ls"/>
                             <constraint firstItem="e8P-2y-UOi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XCV-2t-8hq"/>
                             <constraint firstAttribute="bottom" secondItem="e8P-2y-UOi" secondAttribute="bottom" id="bai-Bo-f7W"/>
                             <constraint firstItem="e8P-2y-UOi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="btT-P1-AD1"/>
+                            <constraint firstItem="3sL-p3-uqi" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="jYI-KS-BeF"/>
                         </constraints>
                     </view>
                 </viewController>
