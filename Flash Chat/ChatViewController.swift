@@ -161,7 +161,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
          message.messageBody = text
          message.sender = sender
          
-         
+         self.messageArray.append(message)
       }
    }
 
