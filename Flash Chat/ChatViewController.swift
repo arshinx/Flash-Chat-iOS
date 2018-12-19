@@ -28,7 +28,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       messageTextfield.delegate = self
       
       // Set the tapGesture
-      let tapGesture = UITapGestureRecognizer(target: messageTableView, action: #selector(tableViewTapped))
+      let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
       messageTableView.addGestureRecognizer(tapGesture)
       
       // Register MessageCell.xib file
@@ -41,8 +41,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    ///////////////////////////////////////////
 
    //MARK: - TableView DataSource Methods
-
-
 
    // cellForRowAtIndexPath
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,9 +72,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    ///////////////////////////////////////////
 
    //MARK:- TextField Delegate Methods
-
-
-
 
    // Begins Editing
    func textFieldDidBeginEditing(_ textField: UITextField) {
