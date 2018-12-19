@@ -140,8 +140,22 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       
    }
 
-   //TODO: Create the retrieveMessages method here:
-
+   // Retrieve Messages method
+   func retrieveMessages() {
+      
+      // Get messages from DB
+      let messageDB = Database.database().reference().child("Messages")
+      
+      // Observe for new incoming messages
+      messageDB.observe(.childAdded) { (snapshot) in
+         let snapshotValue = snapshot.value as! Dictionary<String, String>
+         
+         let text = snapshotValue["MessageBody"]!
+         let sender = snapshotValue["Sender"]!
+         
+         print("Text: \(text), Sender: \(sender)")
+      }
+   }
 
    @IBAction func logOutPressed(_ sender: AnyObject) {
 
