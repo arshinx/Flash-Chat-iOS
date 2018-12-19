@@ -79,8 +79,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       // Animate
       UIView.animate(withDuration: 0.5) {
          // move up message textfield
-         self.heightConstraint.constant = 308
+         self.heightConstraint.constant = 370
          self.view.layoutIfNeeded()
+         // Debug - figure out ration between keyboard and screen heights
+         print("\n\n----------------\n\n")
+         print(UIScreen.main.bounds.height/370)
       }
    }
 
@@ -93,6 +96,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
          self.heightConstraint.constant = 50
          self.view.layoutIfNeeded()
       }
+      
    }
 
    
@@ -102,11 +106,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    // MARK: - Send & Recieve from Firebase
 
    @IBAction func sendPressed(_ sender: AnyObject) {
-
-
-   //TODO: Send the message to Firebase and save it in our database
-
-
+      
+      // Send the message to Firebase and save it in our database
+      
    }
 
    //TODO: Create the retrieveMessages method here:
