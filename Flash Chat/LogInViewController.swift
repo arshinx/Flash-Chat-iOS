@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class LogInViewController: UIViewController {
 
@@ -25,12 +26,18 @@ override func didReceiveMemoryWarning() {
 
 
 @IBAction func logInPressed(_ sender: AnyObject) {
+   // Show Loading Indicator
+   SVProgressHUD.show()
+   
    // Log in the user
    Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
       if error != nil {
          print(error!)
       } else {
          print(user.debugDescription)
+         
+         // hide loading I\indicator
+         SVProgressHUD.dismiss()
          self.performSegue(withIdentifier: "goToChat", sender: self)
       }
    }
