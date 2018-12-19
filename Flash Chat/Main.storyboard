@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV4-Sa-2Rb">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="836" width="414" height="60"/>
                                 <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Etm-9X-Xr6"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWY-w2-6La">
-                                <rect key="frame" x="0.0" y="547" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="776" width="414" height="60"/>
                                 <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="TbY-W7-xgr"/>
@@ -50,7 +50,9 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wWy-sR-rfK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="776"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.35294117650000001" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,13 +92,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="PfL-jt-q3u">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Mv-79o">
-                                <rect key="frame" x="0.0" y="70" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1R-HS-xgc">
-                                        <rect key="frame" x="16" y="89" width="343" height="40"/>
+                                        <rect key="frame" x="16" y="89" width="382" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="XuY-dJ-oiY"/>
                                         </constraints>
@@ -104,7 +106,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-Xx-USU">
-                                        <rect key="frame" x="16" y="137" width="343" height="40"/>
+                                        <rect key="frame" x="16" y="137" width="382" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="t4i-pt-0WT"/>
                                         </constraints>
@@ -112,7 +114,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67C-Ey-AV3">
-                                        <rect key="frame" x="16" y="185" width="343" height="40"/>
+                                        <rect key="frame" x="16" y="185" width="382" height="40"/>
                                         <color key="backgroundColor" red="0.14539031684398651" green="0.63518619537353516" blue="0.304024338722229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4rv-81-L2o"/>
@@ -144,6 +146,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PfL-jt-q3u" firstAttribute="leading" secondItem="15o-yi-McO" secondAttribute="leading" id="1IJ-ss-oVE"/>
                             <constraint firstAttribute="bottom" secondItem="PfL-jt-q3u" secondAttribute="bottom" id="8vz-Tc-ydj"/>
@@ -319,7 +322,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.2274509804" green="0.35294117650000001" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.2274509804" green="0.35294117650000001" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WpY-IA-acB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="893-Zp-giU"/>
                             <constraint firstItem="7eI-kw-TVm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="AAq-UW-DJb"/>
@@ -332,6 +335,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Flash Chat" id="OGj-fw-WBv">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="mz9-8w-6zi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="logOutPressed:" destination="vXZ-lx-hvc" id="AiZ-zI-Rgo"/>
                             </connections>
@@ -359,9 +363,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NdW-bI-YIx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2274509804" green="0.35294117650000001" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.22745098039215686" green="0.35294117647058826" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -379,6 +390,6 @@
         <image name="background1" width="1800" height="1192.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rRW-Qd-PQi"/>
+        <segue reference="RuE-fI-2yI"/>
     </inferredMetricsTieBreakers>
 </document>
