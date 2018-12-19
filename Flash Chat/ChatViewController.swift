@@ -29,6 +29,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       // Set the tapGesture
 
       // Register MessageCell.xib file
+      messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
 
    }
 
