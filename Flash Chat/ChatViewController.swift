@@ -78,9 +78,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    // Begins Editing
    func textFieldDidBeginEditing(_ textField: UITextField) {
       
-      // move up message textfield
-      heightConstraint.constant = 308
-      view.layoutIfNeeded()
+      // Animate
+      UIView.animate(withDuration: 0.5) {
+         // move up message textfield
+         self.heightConstraint.constant = 308
+         self.view.layoutIfNeeded()
+      }
    }
 
    // Ends Editing

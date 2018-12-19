@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Flash Chat/ChatViewController.swift"
-            timestampString = "566900983.770575"
+            timestampString = "566901639.5740809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "logOutPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
