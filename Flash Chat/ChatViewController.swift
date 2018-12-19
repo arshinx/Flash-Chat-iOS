@@ -81,11 +81,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       UIView.animate(withDuration: 0.5) {
          // move up message textfield
          self.heightConstraint.constant = 370
-         self.view.layoutIfNeeded()
-         // Debug - figure out ration between keyboard and screen heights
-         print("\n\n----------------\n\n")
-         print(UIScreen.main.bounds.height/370)
-      }
+         self.view.layoutIfNeeded()      }
    }
 
    // Ends Editing
