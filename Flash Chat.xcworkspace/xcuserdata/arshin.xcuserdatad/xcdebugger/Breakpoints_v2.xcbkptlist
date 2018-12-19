@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Flash Chat/ChatViewController.swift"
-            timestampString = "566896504.9674391"
+            timestampString = "566898081.795634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "ChatViewController"
             landmarkType = "3">
          </BreakpointContent>
