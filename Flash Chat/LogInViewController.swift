@@ -34,10 +34,9 @@ override func didReceiveMemoryWarning() {
       if error != nil {
          print(error!)
       } else {
-         print(user.debugDescription)
-         
-         // hide loading I\indicator
+         // hide loading indicator
          SVProgressHUD.dismiss()
+         // go to chat screen
          self.performSegue(withIdentifier: "goToChat", sender: self)
       }
    }
