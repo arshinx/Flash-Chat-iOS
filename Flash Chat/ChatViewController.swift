@@ -89,6 +89,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    // Ends Editing
    func textFieldDidEndEditing(_ textField: UITextField) {
       
+      // Animate Back
+      UIView.animate(withDuration: 0.5) {
+         // move down message textfield
+         self.heightConstraint.constant = 50
+         self.view.layoutIfNeeded()
+      }
    }
 
    
