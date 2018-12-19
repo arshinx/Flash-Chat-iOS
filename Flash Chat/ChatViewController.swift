@@ -131,8 +131,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
          if error != nil {
             print(error!)
          } else {
-            print("\n\n Message Saved!! \n\n")
-            
             // Enable UI
             self.messageTextfield.isEnabled = true
             self.sendButton.isEnabled = true
