@@ -136,6 +136,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             // Enable UI
             self.messageTextfield.isEnabled = true
             self.sendButton.isEnabled = true
+            self.messageTextfield.text = ""
          }
       }
       
