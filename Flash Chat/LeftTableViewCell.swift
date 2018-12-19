@@ -11,7 +11,11 @@ import UIKit
 class LeftTableViewCell: UITableViewCell {
 
    // Outlets
-   
+    @IBOutlet weak var messageBackground: UIView!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var messageBody: UILabel!
+    @IBOutlet weak var senderUsername: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
       
