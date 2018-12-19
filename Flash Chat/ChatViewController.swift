@@ -111,6 +111,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
    @IBAction func sendPressed(_ sender: AnyObject) {
       
+      // hide keyboard
+      messageTextfield.endEditing(true)
+      
+      // Disable UI Elements
+      messageTextfield.isEnabled = false
+      sendButton.isEnabled = false 
+      
       // Send the message to Firebase and save it in our database
       
    }
