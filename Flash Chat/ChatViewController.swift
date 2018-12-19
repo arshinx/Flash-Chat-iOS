@@ -80,8 +80,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       // Animate
       UIView.animate(withDuration: 0.5) {
          // move up message textfield
-         self.heightConstraint.constant = 370
-         self.view.layoutIfNeeded()      }
+         if (UIScreen.main.bounds.height >= 800) {
+            self.heightConstraint.constant = 370
+         } else if (UIScreen.main.bounds.height >= 700 && UIScreen.main.bounds.height < 800) {
+            self.heightConstraint.constant = 330
+         } else {
+            self.heightConstraint.constant = 320
+         }
+         self.view.layoutIfNeeded()
+      }
    }
 
    // Ends Editing
