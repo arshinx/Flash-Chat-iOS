@@ -78,7 +78,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    func textFieldDidBeginEditing(_ textField: UITextField) {
       
       // Animate
-      UIView.animate(withDuration: 0.5) {
+      UIView.animate(withDuration: 0.3) {
          // move up message textfield
          if (UIScreen.main.bounds.height >= 800) {
             self.heightConstraint.constant = 370
@@ -122,7 +122,23 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       let messagesDB = Database.database().reference().child("Messages")
       let messageDictionary = ["Sender": Auth.auth().currentUser?.email,
                                "MessageBody": messageTextfield.text!]
-      messagesDB.childByAutoId().setValue(messageDictionary) // Allows messages to be saved via custom identifier and assigning values
+      
+      // Allows messages to be saved via custom identifier and saves values
+      messagesDB.childByAutoId().setValue(messageDictionary) {
+         (error, reference) in
+         
+         // Error
+         if error != nil {
+            print(error!)
+         } else {
+            print("\n\n Message Saved!! \n\n")
+            
+            // Enable UI
+            self.messageTextfield.isEnabled = true
+            self.sendButton.isEnabled = true
+         }
+      }
+      
    }
 
    //TODO: Create the retrieveMessages method here:
