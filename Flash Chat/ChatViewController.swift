@@ -160,7 +160,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
          message.messageBody = text
          message.sender = sender
          
+         // Track Message Data
          self.messageArray.append(message)
+         
+         // Reconfigure for cell sizing
+         self.configureTableView()
+         // Reload with new data
+         self.messageTableView.reloadData()
       }
    }
 
