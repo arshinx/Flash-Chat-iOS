@@ -18,6 +18,7 @@
 		63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */; };
 		63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */; };
 		63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */; };
+		735EB99E21C9E96C0086A774 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 735EB99D21C9E96C0086A774 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		735EB99D21C9E96C0086A774 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				6321A9BA1B94EBA10053D2E7 /* Info.plist */,
+				735EB99D21C9E96C0086A774 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				63E28B291B9A336600FBF6E0 /* Main.storyboard in Resources */,
 				6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */,
+				735EB99E21C9E96C0086A774 /* GoogleService-Info.plist in Resources */,
 				63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
 			);
