@@ -9,8 +9,7 @@ import Firebase
 
 class ChatViewController: UIViewController {
     
-   // Declare instance variables here
-
+   // Instance variables
 
    // We've pre-linked the IBOutlets
    @IBOutlet var heightConstraint: NSLayoutConstraint!
@@ -18,26 +17,19 @@ class ChatViewController: UIViewController {
    @IBOutlet var messageTextfield: UITextField!
    @IBOutlet var messageTableView: UITableView!
 
-
-
    override func viewDidLoad() {
-     super.viewDidLoad()
-     
-     //TODO: Set yourself as the delegate and datasource here:
-     
-     
-     
-     //TODO: Set yourself as the delegate of the text field here:
+   super.viewDidLoad()
 
-     
-     
-     //TODO: Set the tapGesture here:
-     
-     
+      // Set VC as the delegate and datasource
+      messageTableView.delegate = self
+      messageTableView.dataSource = self
 
-     //TODO: Register your MessageCell.xib file here:
+      // Set VC as the delegate of the text field
 
-     
+      // Set the tapGesture
+
+      // Register MessageCell.xib file
+
    }
 
    ///////////////////////////////////////////
@@ -50,15 +42,15 @@ class ChatViewController: UIViewController {
 
 
 
-   //TODO: Declare numberOfRowsInSection here:
+   //TODO: Declare numberOfRowsInSection
 
 
 
-   //TODO: Declare tableViewTapped here:
+   //TODO: Declare tableViewTapped
 
 
 
-   //TODO: Declare configureTableView here:
+   //TODO: Declare configureTableView
 
 
 
@@ -69,12 +61,12 @@ class ChatViewController: UIViewController {
 
 
 
-   //TODO: Declare textFieldDidBeginEditing here:
+   //TODO: Declare textFieldDidBeginEditing
 
 
 
 
-   //TODO: Declare textFieldDidEndEditing here:
+   //TODO: Declare textFieldDidEndEditing
 
 
 
@@ -88,18 +80,18 @@ class ChatViewController: UIViewController {
 
 
    @IBAction func sendPressed(_ sender: AnyObject) {
-     
-     
-      //TODO: Send the message to Firebase and save it in our database
-     
-     
+
+
+   //TODO: Send the message to Firebase and save it in our database
+
+
    }
 
    //TODO: Create the retrieveMessages method here:
 
-   
+
    @IBAction func logOutPressed(_ sender: AnyObject) {
-     
+
       // Log out the user and send them back to WelcomeViewController
       do {
          try Auth.auth().signOut()
@@ -107,9 +99,6 @@ class ChatViewController: UIViewController {
       } catch {
          print("Error Signing out!")
       }
-     
+
    }
-    
-
-
 }
