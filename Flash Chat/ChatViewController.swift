@@ -37,6 +37,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
       // Enable Auto-resizing for cells
       configureTableView()
+      
+      // Get Messages
+      retrieveMessages()
    }
 
    ///////////////////////////////////////////
@@ -153,7 +156,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
          let text = snapshotValue["MessageBody"]!
          let sender = snapshotValue["Sender"]!
          
-         print("Text: \(text), Sender: \(sender)")
+         // Message Object
+         let message: Message = Message()
+         message.messageBody = text
+         message.sender = sender
+         
+         
       }
    }
 
