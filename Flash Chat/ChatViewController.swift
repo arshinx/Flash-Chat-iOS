@@ -35,6 +35,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       
       // Register MessageCell.xib file
       messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+      messageTableView.register(UINib(nibName: "LeftMessageCell", bundle: nil), forCellReuseIdentifier: "leftMessageCell")
+
 
       // Enable Auto-resizing for cells
       configureTableView()
@@ -53,24 +55,40 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    // cellForRowAtIndexPath
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
-      // Cell
-      let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
+      // retrieve username at this index
+      let username = messageArray[indexPath.row].sender
+      let messageBody = messageArray[indexPath.row].messageBody
       
-      // Cell Properties
-      cell.messageBody.text = messageArray[indexPath.row].messageBody
-      cell.senderUsername.text = messageArray[indexPath.row].sender
-      cell.avatarImageView.image = UIImage(named: "egg")
+      var cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
       
       // BG Color based on Auth
-      if cell.senderUsername.text == Auth.auth().currentUser?.email as! String {
+      if username == Auth.auth().currentUser?.email {
+         
+         // Colors
          cell.avatarImageView.backgroundColor = UIColor.flatMint()
          cell.messageBackground.backgroundColor = UIColor.flatSkyBlue()
+         
       } else {
-         cell.avatarImageView.backgroundColor = UIColor.flatWatermelon()
-         cell.messageBackground.backgroundColor = UIColor.flatGray()
+         var cell2 = tableView.dequeueReusableCell(withIdentifier: "leftMessageCell", for: indexPath) as! LeftTableViewCell
+         
+         // Colors
+         cell2.avatarImageView.backgroundColor = UIColor.flatWatermelon()
+         cell2.messageBackground.backgroundColor = UIColor.flatGray()
+         
+         cell2.avatarImageView.image = UIImage(named: "egg")
+         cell2.messageBody.text = messageBody
+         cell2.senderUsername.text = username
+         
+         return cell2
       }
       
+      // Cell Properties
+      cell.messageBody.text = messageBody
+      cell.senderUsername.text = username
+      cell.avatarImageView.image = UIImage(named: "egg")
+      
       return cell
+      
    }
 
    // numberOfRowsInSection
