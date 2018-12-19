@@ -60,8 +60,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
    }
 
    // Declare tableViewTapped (selector reference)
-   func tableViewTapped() {
-      textFieldDidEndEditing(messageTextfield)
+   @objc func tableViewTapped() {
+      messageTextfield.endEditing(true)
    }
 
    // Flexible sizing for cells
