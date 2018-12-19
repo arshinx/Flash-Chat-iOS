@@ -39,7 +39,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
 
-   //TODO: Declare cellForRowAtIndexPath here:
+   // cellForRowAtIndexPath
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
       let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
@@ -49,10 +49,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       return cell
    }
 
-
-   //TODO: Declare numberOfRowsInSection
-
-
+   // numberOfRowsInSection
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return 3
+   }
 
    //TODO: Declare tableViewTapped
 
