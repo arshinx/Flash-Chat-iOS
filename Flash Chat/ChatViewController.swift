@@ -25,7 +25,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       messageTableView.dataSource = self
 
       // Set VC as the delegate of the text field
-
+      messageTextfield.delegate = self
+      
       // Set the tapGesture
 
       // Register MessageCell.xib file
