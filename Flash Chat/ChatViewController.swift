@@ -83,7 +83,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
       view.layoutIfNeeded()
    }
 
-   
+   // Ends Editing
+   func textFieldDidEndEditing(_ textField: UITextField) {
+      
+   }
 
    
    ///////////////////////////////////////////
